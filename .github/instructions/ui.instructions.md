@@ -44,6 +44,12 @@ Refer to technology-specific instruction files:
 - Consistent spacing and visual hierarchy
 - Responsive design that works on mobile, tablet, and desktop
 
+### Commenting and documentation
+
+- Comments should explain intent, decisions, or trade-offs. Do not restate the code in prose or duplicate obvious variable names.
+- Keep comments accurate and update them in the same change that modifies the relevant logic.
+- Reusable components should self-document their contract through a typed `Props` interface, with a short doc block when a property or behavior is not obvious from the names alone.
+
 ### Component Reusability
 
 - Create reusable components for common UI patterns
