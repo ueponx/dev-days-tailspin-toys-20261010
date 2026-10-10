@@ -27,6 +27,13 @@ export default [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
+      // Keep type-only imports explicit so the codebase stays readable and avoids runtime imports for value-only types.
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        { prefer: "type-imports", fixStyle: "inline-type-imports" },
+      ],
+      // Discourage untyped `any` values unless a clear justification exists.
+      "@typescript-eslint/no-explicit-any": "warn",
     },
   },
 
